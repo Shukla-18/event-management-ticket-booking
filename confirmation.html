@@ -1,0 +1,114 @@
+<!doctype html>
+<!-- ==========================================================================
+     EventFlow · Booking Confirmation & Digital Pass (confirmation.html)
+          Role: Celebration Screen, Digital Boarding Pass & Pure CSS QR Code Matrix
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <!-- Document Standards: Modern HTML5 parsing mode -->
+  <meta charset="utf-8">
+  <!-- Character Encoding: UTF-8 Unicode character mapping -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Viewport Configuration: Responsive scaling across mobile and desktop -->
+  <title>Booking Confirmed | EventFlow</title>
+  <!-- Stylesheet Attachment: Connects centralized style.css design system -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========================================================================
+       Site Header: Unified global navigation bar
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- Logo Branding: Routes back to discover homepage -->
+      <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+      <!-- Navigation Links: Attendee main menu -->
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Discover</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </nav>
+      <!-- Action Control: Browse more events CTA -->
+      <div class="nav-actions">
+        <a class="button" href="events.html">Find another event</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Celebration Banner: Circular lime success mark & reassuring confirmation
+         ====================================================================== -->
+    <section class="confirmation-hero">
+      <div class="container">
+        <!-- Circular Success Checkmark: Pure CSS lime badge with verified symbol -->
+        <div class="confirmation-mark">✓</div>
+        <!-- Main Confirmation Headline: Reassures attendee their reservation is secured -->
+        <h1>You're in. We've saved your spot.</h1>
+        <p>A confirmation email and PDF receipt have been sent to your inbox.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Digital Boarding Pass Ticket Container & Pure CSS QR Matrix
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <!-- Digital Boarding Pass Card: Clean container simulating airline-style event pass -->
+        <div class="ticket">
+          <!-- Ticket Header: Displays event title and verified pass tier badge -->
+          <div class="ticket-top">
+            <div>
+              <span class="eyebrow">Verified attendee pass</span>
+              <h3>Future Forward Summit 2025</h3>
+              <p class="muted">Friday, 18 April 2025 · 10:00 AM IST</p>
+            </div>
+            <span class="event-tag" style="background:var(--lime);color:var(--ink)">Confirmed</span>
+          </div>
+
+          <!-- Ticket Metadata Subgrid: 3-column layout organizing pass credentials -->
+          <div class="ticket-info">
+            <div class="info-item"><span>Pass Holder</span><strong>Aarav Sharma</strong></div>
+            <div class="info-item"><span>Pass Serial</span><strong>EF-24018</strong></div>
+            <div class="info-item"><span>Venue Gate</span><strong>Gate A · Door 3</strong></div>
+          </div>
+
+          <!-- Ticket Bottom Stub: Houses simulated QR entry scanner and instructions -->
+          <div class="ticket-bottom">
+            <!-- Pure CSS QR Code Matrix: Generated using diagonal repeating linear gradient -->
+            <div class="qr" aria-label="Digital entry QR code">
+              <span>SCAN</span>
+            </div>
+            <div>
+              <strong>Present this code at the gate</strong>
+              <p class="muted" style="font-size:12px">Show on your phone or print ahead. Valid for one attendee entry.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticket Action Controls: Print and download buttons for attendee convenience -->
+        <div class="ticket-actions">
+          <button class="button" onclick="window.print()">Print pass</button>
+          <a class="button secondary" href="index.html">Back to discover</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Global Grounding Footer: Standardized site closure
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+        <p>Good events, clearly found.</p>
+      </div>
+      <div class="footer-links">
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>\n

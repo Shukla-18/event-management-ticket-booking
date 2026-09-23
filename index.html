@@ -1,0 +1,181 @@
+<!doctype html>
+<!-- ==========================================================================
+     EventFlow · Home Landing Experience (index.html)
+          Role: Discovery Portal, Fluid Hero, Category Filter Pills & Event Shortlist
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <!-- Document Type & Standards: HTML5 doctype triggers standards mode in modern browsers -->
+  <meta charset="utf-8">
+  <!-- Character Encoding: UTF-8 supports global typography, currency glyphs (Rs.), and symbols -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Responsive Viewport: Ensures 1:1 pixel rendering on mobile phones without desktop downscaling -->
+  <title>EventFlow | Find your next good night</title>
+  <!-- Central Stylesheet: Links centralized style.css driving all tokens, grids, and components -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========================================================================
+       Global Navigation Header: Uses Flexbox to balance logo, links, and actions
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- Brand Logo: Pure CSS geometric mark with link back to discovery homepage -->
+      <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+      <!-- Semantic Navigation: aria-label aids screen readers; .active denotes current page -->
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">Discover</a>
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </nav>
+      <!-- Action Controls: Direct links to support desk and full event calendar -->
+      <div class="nav-actions">
+        <a class="link-button" href="about.html#contact">Talk to us</a>
+        <a class="button" href="events.html">Find an event</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Hero Banner Section: Asymmetrical 2-column CSS Grid (1.15fr to 0.85fr)
+         ====================================================================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <!-- Left Hero Column: Copywriting hierarchy, eyebrow, fluid H1, and action buttons -->
+        <div>
+          <!-- Eyebrow: Small uppercase monospace badge establishing immediate section tone -->
+          <span class="eyebrow">The city is yours</span>
+          <!-- Fluid H1: Uses CSS clamp() to dynamically scale font size from phone to 4K -->
+          <h1>Plans worth leaving the house for.</h1>
+          <!-- Lead Description: Clear value proposition introducing curated live experiences -->
+          <p class="hero-copy">Discover concerts, workshops, ideas, and experiences curated for people who would rather be somewhere interesting.</p>
+          <!-- Call-to-Action Group: Dual button cluster with white-by-default primary and ghost buttons -->
+          <div class="hero-actions">
+            <a class="button" href="events.html">Explore events <span>-></span></a>
+            <a class="button ghost" href="about.html">How EventFlow works</a>
+          </div>
+        </div>
+        <!-- Right Hero Column: Framed visual card showcasing genuine live event crowd atmosphere -->
+        <div class="hero-photo">
+          <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=85" alt="Crowd enjoying a live concert">
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Category Filter Strip: Horizontal touch-scrolling pill navigation bar
+         ====================================================================== -->
+    <section class="category-strip">
+      <div class="container categories">
+        <!-- Pill Links: White-by-default capsule buttons; .selected marks the active filter -->
+        <a class="category selected" href="events.html">All events</a>
+        <a class="category" href="events.html">Music</a>
+        <a class="category" href="events.html">Ideas &amp; tech</a>
+        <a class="category" href="events.html">Food &amp; culture</a>
+        <a class="category" href="events.html">Sports</a>
+        <a class="category" href="events.html">Wellness</a>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Editor's Shortlist: 3-Column CSS Grid displaying top upcoming events
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <!-- Section Header: Flexbox row placing title on left and catalog text link on right -->
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Editor's shortlist</span>
+            <h2>Happening soon</h2>
+          </div>
+          <a class="text-link" href="events.html">View all events -></a>
+        </div>
+        <!-- Event Card Grid: 3 equal columns (repeat(3, 1fr)) with 20px uniform gutter -->
+        <div class="event-grid">
+          <!-- Shortlist Card 1: Ideas & Technology Conference -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="Creative conference">
+                <span class="event-tag">Ideas</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">18 APR 2025 / 10:00 AM</span>
+                <h3>Future Forward Summit</h3>
+                <p class="event-meta">The Brickhouse, New Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 899</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Shortlist Card 2: Live Music & Indie Concert -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=80" alt="Live music performer">
+                <span class="event-tag">Music</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">26 APR 2025 / 07:30 PM</span>
+                <h3>Indie After Dark</h3>
+                <p class="event-meta">Siri Fort Auditorium, Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 1,299</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Shortlist Card 3: Food & Cultural Community Gathering -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Colorful food">
+                <span class="event-tag">Culture</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">03 MAY 2025 / 05:00 PM</span>
+                <h3>The Long Table</h3>
+                <p class="event-meta">Sunder Nursery, New Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 699</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Conversion Feature Band: Attention-grabbing yellow banner prompting action
+         ====================================================================== -->
+    <section class="feature-band">
+      <div class="container feature-band-inner">
+        <h3>Make a little room for something new.</h3>
+        <a class="button secondary" href="events.html">Browse the calendar -></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Global Grounding Footer: Brand summary statement & user navigation links
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+        <p>Good events, clearly found.</p>
+      </div>
+      <div class="footer-links">
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>\n

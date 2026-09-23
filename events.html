@@ -1,0 +1,210 @@
+<!doctype html>
+<!-- ==========================================================================
+     EventFlow · Events Catalog & Filter Toolbar (events.html)
+          Role: Search Toolbar, Multi-Category Filters & 6-Card Event Directory
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <!-- Document Type & Standards: HTML5 standards mode rendering -->
+  <meta charset="utf-8">
+  <!-- Character Encoding: UTF-8 Unicode character mapping -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Viewport Configuration: Ensures responsive scaling across all screen sizes -->
+  <title>Events | EventFlow</title>
+  <!-- Stylesheet Attachment: Connects centralized style.css design system -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========================================================================
+       Site Header: Global navigation with active indicator on Events link
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- Logo Branding: Geometric CSS mark routing back to home -->
+      <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+      <!-- Navigation Links: .active class highlights the current catalog page -->
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Discover</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </nav>
+      <!-- Action Control: Quick CTA button allowing instant event browsing -->
+      <div class="nav-actions">
+        <a class="button" href="events.html">Browse events</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Catalog Hero Banner: Soft sky-blue container setting the directory context
+         ====================================================================== -->
+    <section class="page-hero">
+      <div class="container">
+        <!-- Eyebrow: Section metadata establishing calendar theme -->
+        <span class="eyebrow">The event calendar</span>
+        <!-- Headline: Prominent 2-line fluid heading welcoming discovery -->
+        <h1>Find your next<br>favorite thing.</h1>
+        <!-- Lead Copy: Sets expectations for local cultural, tech, and wellness events -->
+        <p>Search the good stuff happening around you, from big nights out to small rooms full of big ideas.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Filter Toolbar & 6-Card Event Grid
+         ====================================================================== -->
+    <section class="section">
+      <div class="container">
+        <!-- Filter Toolbar: Flexbox container aligning search query and select menus -->
+        <div class="filters">
+          <!-- Search Input: Wrapped in label for accessible hit-testing; clean borderless input -->
+          <label class="search-box">
+            <input type="search" placeholder="Search events, venues, or cities" aria-label="Search events">
+          </label>
+          <!-- Category Filter: Native select providing accessible zero-JS option picking -->
+          <select class="filter-select" aria-label="Filter by category">
+            <option>All categories</option>
+            <option>Music</option>
+            <option>Ideas &amp; tech</option>
+            <option>Food &amp; culture</option>
+          </select>
+          <!-- Date Filter: Temporal dropdown filtering by near-term calendar windows -->
+          <select class="filter-select" aria-label="Filter by date">
+            <option>Any date</option>
+            <option>This week</option>
+            <option>This month</option>
+          </select>
+        </div>
+
+        <!-- Event Catalog Grid: 3-column CSS Grid displaying 6 diverse curated events -->
+        <div class="event-grid">
+          <!-- Event 1: Ideas & Technology Summit -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=800&q=80" alt="People at conference">
+                <span class="event-tag">Ideas</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">18 APR 2025 / 10:00 AM</span>
+                <h3>Future Forward Summit</h3>
+                <p class="event-meta">The Brickhouse, New Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 899</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Event 2: Live Music Performance -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=800&q=80" alt="Live music performance">
+                <span class="event-tag">Music</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">26 APR 2025 / 07:30 PM</span>
+                <h3>Indie After Dark</h3>
+                <p class="event-meta">Siri Fort Auditorium, Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 1,299</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Event 3: Cultural Culinary Gathering -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Colorful culinary feast">
+                <span class="event-tag">Culture</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">03 MAY 2025 / 05:00 PM</span>
+                <h3>The Long Table</h3>
+                <p class="event-meta">Sunder Nursery, New Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 699</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Event 4: Leadership & Business Workshop -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80" alt="Conference room presentation">
+                <span class="event-tag">Business</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">10 MAY 2025 / 09:00 AM</span>
+                <h3>Build Better Teams</h3>
+                <p class="event-meta">India Habitat Centre, Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 1,499</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Event 5: Wellness & Outdoor Yoga -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80" alt="Yoga session outdoors">
+                <span class="event-tag">Wellness</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">18 MAY 2025 / 06:30 AM</span>
+                <h3>Slow Flow Yoga</h3>
+                <p class="event-meta">Lodhi Garden, New Delhi</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 399</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+          <!-- Event 6: Entertainment & Rooftop Cinema -->
+          <article class="event-card">
+            <a href="event-detail.html">
+              <div class="event-image">
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80" alt="Cinema theater screen">
+                <span class="event-tag">Film</span>
+              </div>
+              <div class="event-body">
+                <span class="event-date">24 MAY 2025 / 08:00 PM</span>
+                <h3>Rooftop Cinema Club</h3>
+                <p class="event-meta">Skyline Deck, Gurugram</p>
+                <div class="event-footer">
+                  <span class="price">From Rs. 799</span>
+                  <span class="text-link">View details</span>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Global Grounding Footer: Standardized site closure
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+        <p>Good events, clearly found.</p>
+      </div>
+      <div class="footer-links">
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>\n

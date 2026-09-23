@@ -1,0 +1,106 @@
+<!doctype html>
+<!-- ==========================================================================
+     EventFlow · Platform Story & Attendee Support (about.html)
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <!-- Document Standards: Modern HTML5 parsing mode -->
+  <meta charset="utf-8">
+  <!-- Character Encoding: UTF-8 Unicode character mapping -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Viewport Configuration: Responsive scaling across mobile and desktop -->
+  <title>About &amp; Contact | EventFlow</title>
+  <!-- Stylesheet Attachment: Connects centralized style.css design system -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========================================================================
+       Site Header: Global navigation with active indicator on About link
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- Logo Branding: Routes back to discover homepage -->
+      <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+      <!-- Navigation Links: .active highlights the current About page -->
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Discover</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="about.html">About</a>
+      </nav>
+      <!-- Action Control: Direct link to event catalog -->
+      <div class="nav-actions">
+        <a class="button" href="events.html">Find an event</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Page Hero: Perspective banner setting the platform ethos
+         ====================================================================== -->
+    <section class="page-hero">
+      <div class="container">
+        <!-- Eyebrow: Section metadata establishing brand philosophy -->
+        <span class="eyebrow">Our perspective</span>
+        <!-- Headline: Prominent 2-line fluid heading -->
+        <h1>Events should be<br>easier to find.</h1>
+        <p>A simple front-end platform built for connecting people with memorable gatherings.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Mission Narrative & Attendee Support Desk (50/50 CSS Grid)
+         ====================================================================== -->
+    <section class="section">
+      <div class="container about-grid">
+        <!-- Left Column: Platform Mission & Philosophy Statement -->
+        <div>
+          <span class="eyebrow">Why EventFlow</span>
+          <h2>Clear discovery over endless scrolling.</h2>
+          <p>Too many event platforms bury the details: venue maps are hidden, pricing is obscured until checkout, and finding something good feels like work.</p>
+          <p>EventFlow cuts through the noise. It makes discovering live experiences simple, direct, and transparent. For attendees, it makes the journey from "maybe" to "see you there" feel effortless.</p>
+        </div>
+
+        <!-- Right Column: Attendee Support & Enquiries Contact Form Card -->
+        <!-- Anchor ID #contact: Enables direct deep-linking from header "Talk to us" -->
+        <div class="contact-card" id="contact">
+          <span class="eyebrow">Get in touch</span>
+          <h3>Have questions? Drop us a note.</h3>
+          <p class="muted" style="font-size:13px;margin-bottom:16px">Our community support desk responds within 24 hours.</p>
+          <form action="index.html">
+            <div class="field" style="margin-bottom:12px">
+              <label for="contact-name">Your name</label>
+              <input id="contact-name" type="text" placeholder="Priya Verma" required>
+            </div>
+            <div class="field" style="margin-bottom:12px">
+              <label for="contact-email">Email address</label>
+              <input id="contact-email" type="email" placeholder="priya@example.com" required>
+            </div>
+            <div class="field" style="margin-bottom:16px">
+              <label for="contact-msg">Message</label>
+              <textarea id="contact-msg" rows="3" placeholder="Tell us what you are looking for..." required></textarea>
+            </div>
+            <button class="button" type="submit">Send note</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Global Grounding Footer: Standardized site closure
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+        <p>Good events, clearly found.</p>
+      </div>
+      <div class="footer-links">
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>\n
