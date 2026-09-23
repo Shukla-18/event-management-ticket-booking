@@ -1,0 +1,145 @@
+<!doctype html>
+<!-- ==========================================================================
+     EventFlow · Attendee Checkout Registration (booking.html)
+          Role: Registration Form, Ticket Selection & Itemized Order Summary
+     ========================================================================== -->
+<html lang="en">
+<head>
+  <!-- Document Standards: Modern HTML5 parsing mode -->
+  <meta charset="utf-8">
+  <!-- Character Encoding: UTF-8 Unicode character mapping -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Viewport Configuration: Responsive scaling across mobile and desktop -->
+  <title>Ticket Checkout | EventFlow</title>
+  <!-- Stylesheet Attachment: Connects centralized style.css design system -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========================================================================
+       Site Header: Unified global navigation bar
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav">
+      <!-- Logo Branding: Routes back to discover homepage -->
+      <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+      <!-- Navigation Links: Attendee main menu -->
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Discover</a>
+        <a class="active" href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </nav>
+      <!-- Action Control: Direct link to support contact desk -->
+      <div class="nav-actions">
+        <a class="button" href="about.html#contact">Need help?</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         Checkout Header / Step Indicator: Informs attendee of progress (Step 01/02)
+         ====================================================================== -->
+    <section class="page-hero">
+      <div class="container">
+        <!-- Step Eyebrow: Clearly communicates multi-step checkout progress -->
+        <span class="eyebrow">Step 01 / 02</span>
+        <!-- Headline: Reassuring heading orienting the checkout experience -->
+        <h1>Let's get you there.</h1>
+        <p>Complete your registration below to reserve your digital pass.</p>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         Checkout Layout: 2-Column CSS Grid (Form Panel + Order Summary Aside)
+         ====================================================================== -->
+    <section class="section">
+      <div class="container booking-layout">
+        <!-- Left Column: Accessible Attendee Registration Form Panel -->
+        <!-- Native Form: action="confirmation.html" routes directly to ticket pass on submit -->
+        <form class="form-panel" action="confirmation.html">
+          <div class="form-grid">
+            <!-- First Name Field: Semantic label bound to input -->
+            <div class="field">
+              <label for="first-name">First name</label>
+              <input id="first-name" type="text" placeholder="Aarav" required>
+            </div>
+            <!-- Last Name Field: Semantic label bound to input -->
+            <div class="field">
+              <label for="last-name">Last name</label>
+              <input id="last-name" type="text" placeholder="Sharma" required>
+            </div>
+            <!-- Email Address Field: .full utility class spans both columns of form grid -->
+            <div class="field full">
+              <label for="email">Email address</label>
+              <input id="email" type="email" placeholder="aarav@example.com" required>
+            </div>
+            <!-- Ticket Tier Selection: Dropdown allowing attendee to select access level -->
+            <div class="field">
+              <label for="tier">Ticket pass</label>
+              <select id="tier">
+                <option>General Access - Rs. 899</option>
+                <option>Workshop + Conference - Rs. 1,499</option>
+                <option>All-Access VIP - Rs. 2,499</option>
+              </select>
+            </div>
+            <!-- Quantity Selection: Dropdown defining number of attendee passes -->
+            <div class="field">
+              <label for="qty">Quantity</label>
+              <select id="qty">
+                <option>1 ticket</option>
+                <option>2 tickets</option>
+                <option>3 tickets</option>
+                <option>4 tickets</option>
+              </select>
+            </div>
+            <!-- Special Notes: Multi-line textarea with vertical resizing for accommodations -->
+            <div class="field full">
+              <label for="notes">Special requests or dietary notes</label>
+              <textarea id="notes" rows="3" placeholder="Vegetarian lunch, wheelchair accessibility, etc."></textarea>
+            </div>
+            <!-- Form Submit Button: Coral button submitting registration and routing to pass -->
+            <div class="field full">
+              <button class="button coral" type="submit">Continue to pass -></button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Right Column: Itemized Order Summary Aside Card -->
+        <aside class="summary-card">
+          <span class="eyebrow">Order summary</span>
+          <h3>Future Forward Summit</h3>
+          <p class="muted">Friday, 18 April 2025 · The Brickhouse</p>
+          <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+          <div class="summary-row" style="display:flex;justify-content:space-between;margin-bottom:8px">
+            <span>1x General Access Pass</span><strong>Rs. 899</strong>
+          </div>
+          <div class="summary-row" style="display:flex;justify-content:space-between;margin-bottom:8px">
+            <span>Platform Service Fee</span><strong>Rs. 50</strong>
+          </div>
+          <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+          <div class="summary-row" style="display:flex;justify-content:space-between;font-size:18px;font-weight:800">
+            <span>Total due</span><strong>Rs. 949</strong>
+          </div>
+          <p class="muted" style="font-size:11px;margin-top:16px">🔒 256-bit encrypted secure checkout. Instant digital ticket delivery.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       Global Grounding Footer: Standardized site closure
+       ======================================================================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo-mark"></span>eventflow</a>
+        <p>Good events, clearly found.</p>
+      </div>
+      <div class="footer-links">
+        <a href="events.html">Events</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>\n
